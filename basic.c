@@ -1,7 +1,5 @@
 #include <string.h>
 
-#include "sorting_algorithms.h"
-
 void insertionSort(int inputArray[], int sortedArray[], int arraySize)
 {
     int i, j, tmpSwap;

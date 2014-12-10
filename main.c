@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//#include "sorting_algorithms.h"
-
 int main(void)
 {
     int inputArray[10], sortedArray[10];
@@ -17,7 +15,7 @@ int main(void)
 
     printf("\n");
 
-    insertionSort(inputArray, sortedArray, 10);
+    stoogeSort(inputArray, sortedArray, 10);
 
     printf("Sorted array is ");
     for(i = 0; i < 10; ++i)

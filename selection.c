@@ -1,8 +1,6 @@
 #include <string.h>
 #include <stdbool.h>
 
-#include "sorting_algorithms.h"
-
 void bubbleSort(int inputArray[], int sortedArray[], int arraySize)
 {
     int i, tmpSwap;
