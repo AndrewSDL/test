@@ -1,5 +1,14 @@
 #include <string.h>
 
+#include "humorous.h"
+
+void stoogeSort(int inputArray[], int sortedArray[], int arraySize)
+{
+	memcpy(sortedArray, inputArray, arraySize * sizeof(int));
+	
+	stoogeSortRecursive(sortedArray, 0, arraySize - 1);
+}
+
 void stoogeSortRecursive(int sortedArray[], int lowerBound, int upperBound)
 {
 	int tmpSwap;
@@ -22,11 +31,3 @@ void stoogeSortRecursive(int sortedArray[], int lowerBound, int upperBound)
 		stoogeSortRecursive(sortedArray, lowerBound, upperBound - t);
 	}
 }
-
-void stoogeSort(int inputArray[], int sortedArray[], int arraySize)
-{
-	memcpy(sortedArray, inputArray, arraySize * sizeof(int));
-	
-	stoogeSortRecursive(sortedArray, 0, arraySize - 1);
-}
-

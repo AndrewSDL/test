@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include "humorous.h"
+
 int main(void)
 {
     int inputArray[10], sortedArray[10];
